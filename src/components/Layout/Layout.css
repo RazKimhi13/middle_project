@@ -19,17 +19,16 @@ body {
 
 .navbar {
   height: 60px;
-  background-color: #F78CA2;
+  background-color: #f78ca2;
   position: relative;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
-
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* .logo {
 } */
-.logo img{
-    height: 50px;
-    width: 50px;
+.logo img {
+  height: 50px;
+  width: 50px;
 }
 
 .menu-icon {
@@ -50,14 +49,37 @@ body {
 }
 
 .nav-elements ul a {
-    font-size: 30px; 
-    font-weight: 500; 
-    color: #451952;
-    text-decoration: none;
-  font-family: "Dancing Script", cursive; /* Change to the new font */
+  font-size: 30px;
+  font-weight: 500;
+  color: #451952;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  position: relative;
+}
+.nav-elements ul a::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #451952;
+  height: 1px;
+  transition: width 0.2s ease-in-out;
+}
 
-  }
-  
+.nav-elements ul a:hover::before {
+  width: 100%;
+  letter-spacing: 5px;
+}
+
+.nav-elements ul a:hover {
+  letter-spacing: 1px;
+  transition:  0.5s ease-in-out;
+
+}
 
 .nav-elements ul a.active {
   color: #574c4c;
@@ -91,7 +113,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #F78CA2;
+    background-color: #f78ca2;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
