@@ -22,8 +22,13 @@ function ContactUs() {
   };
 
   return (
-    <div className="contact-us">
-      <h2>Contact Us</h2>
+    <div className="contact-us-container">
+    <div className="contact-left">
+      <img src="./src/assets/צילום מסך 2023-09-18 160818.png" alt="" />
+    </div>
+    <div className="contact-right">
+      <h2 className='header'>Contact Us</h2>
+      <div className='contact-us-form'>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -60,7 +65,8 @@ function ContactUs() {
         <button type="submit">Submit</button>
       </form>
     </div>
-  );
+  </div>
+  </div>);
 }
 
 export default ContactUs;
