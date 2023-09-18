@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+
   background-color: #fcfcfc;
 }
 
@@ -19,19 +19,25 @@ body {
 
 .navbar {
   height: 60px;
-  background-color: #fef7e5;
+  background-color: #F78CA2;
   position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+
 }
 
-.logo {
+/* .logo {
+} */
+.logo img{
+    height: 50px;
+    width: 50px;
 }
 
 .menu-icon {
   display: none;
 }
 
-.nav-elements {
-}
+/* .nav-elements {
+} */
 
 .nav-elements ul {
   display: flex;
@@ -44,11 +50,14 @@ body {
 }
 
 .nav-elements ul a {
-  font-size: 16px;
-  font-weight: 400;
-  color: #2f234f;
-  text-decoration: none;
-}
+    font-size: 30px; 
+    font-weight: 500; 
+    color: #451952;
+    text-decoration: none;
+  font-family: "Dancing Script", cursive; /* Change to the new font */
+
+  }
+  
 
 .nav-elements ul a.active {
   color: #574c4c;
@@ -82,7 +91,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: #F78CA2;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
