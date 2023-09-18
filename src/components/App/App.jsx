@@ -1,15 +1,16 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
-import Home from "./components/Home/Home";
-import Blogs from "./components/Blogs/Blogs";
-import Contact from "./components/Contacts/Contacts";
-import NoPage from "./components/NoPage/NoPage";
+import {Routes, Route } from "react-router-dom";
+import Layout from "../Layout/Layout";
+import Home from "../Home/Home";
+import Blogs from "../Blogs/Blogs";
+import Contact from "../Contacts/Contacts";
+import NoPage from "../NoPage/NoPage";
+
+
 function App() {
 
   return (
     <>
-    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -18,7 +19,6 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
     </>
   )
 }
