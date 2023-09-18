@@ -16,8 +16,9 @@ const Layout = () => {
       <nav className="navbar">
         <div className="container">
           <div className="logo">
-            {/* <img src="./src/assets/icons/website-icon.png" alt="navbar-icon" /> */}
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
