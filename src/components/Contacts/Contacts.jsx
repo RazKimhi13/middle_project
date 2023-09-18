@@ -3,6 +3,7 @@ const Contact = () => {
     <div>
        <h1>Contact Me</h1>
       <h1>Eden milo</h1>
+      <h1>raz kimhi</h1>
        </div>
 )
   };
