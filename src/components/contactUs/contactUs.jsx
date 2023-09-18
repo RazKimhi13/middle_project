@@ -1,9 +1,10 @@
 import React from 'react'
+import "./ContactUs.css";
 
-function contactUs() {
+function ContactUs() {
   return (
     <div>contactUs</div>
   )
 }
 
-export default contactUs
+export default ContactUs

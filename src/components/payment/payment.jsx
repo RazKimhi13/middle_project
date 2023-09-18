@@ -1,9 +1,10 @@
 import React from 'react'
+import "./Payment.css";
 
-function payment() {
+function Payment() {
   return (
     <div>payment</div>
   )
 }
 
-export default payment
+export default Payment
