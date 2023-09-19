@@ -1,9 +1,28 @@
-import React from 'react'
-import "./Login.css";
+/* eslint-disable react/prop-types */
+import { useContext } from "react";
+import { useForm } from "react-hook-form";
+import { UserContext } from "../../context/userContext";
 
 
-export default function Login() {
+const Login = () => {
+  const { register, handleSubmit } = useForm();
+  const { login } = useContext(UserContext);
+
   return (
-    <div>Login</div>
-  )
-}
+    <form onSubmit={handleSubmit(login)}>
+      <input
+        type="text"
+        placeholder="Username"
+        {...register("username", { required: true })}
+      />
+      <input
+        type="text"
+        placeholder="Password"
+        {...register("password", { required: true })}
+      />
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default Login;
