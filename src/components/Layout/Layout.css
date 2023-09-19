@@ -55,6 +55,8 @@ body {
   text-decoration: none;
   font-family: "Dancing Script", cursive;
   position: relative;
+
+  transition: 1s;
 }
 .nav-elements ul a::before {
   position: absolute;
@@ -77,8 +79,6 @@ body {
 
 .nav-elements ul a:hover {
   letter-spacing: 1px;
-  transition:  0.5s ease-in-out;
-
 }
 
 .nav-elements ul a.active {
