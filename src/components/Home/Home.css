@@ -17,16 +17,18 @@
 
 
 .logbtn {
-  background-color: beige;
+  background-color:white;
   width: 6vw;
   height: 4vh;
+  border: 0.1vh solid white;
   border-radius: 2vw;
 }
 
 .registerbtn {
-  background-color: #f78ca298;
+  background-color:rgb(198, 142, 251);
   width: 6vw;
   height: 4vh;
+  border: 0.1vh solid rgb(254, 254, 206);
   border-radius: 2vw;
 }
 
@@ -43,21 +45,30 @@
   filter: blur(3px);
   height: 80%;
   object-fit: cover;
-  opacity: .95;
-  width: 100%;
+  opacity: .80;
+  width: 99%;
   margin: 0;
   padding: 0;
   z-index: 1;
+  border: 1vh solid white;
 }
 
 .header {
   font-size: 2rem;
-  font-family: "Courgette", cursive;
   position: absolute;
   top: 30%;
   left: 50%; 
   transform: translate(-50%, -50%); 
   text-align: center;
-  color: rgb(249, 240, 240); 
+  color: rgb(255, 255, 255); 
   text-shadow: 0.4vw 0.2vw rgba(0, 0, 0, 0.481);
+}
+.header h2{
+    font-family: "Courgette", cursive;
+}
+.header h5{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.webimg img{
+  width: 33%;
 }

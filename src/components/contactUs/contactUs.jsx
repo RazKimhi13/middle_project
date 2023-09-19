@@ -27,7 +27,7 @@ function ContactUs() {
       <img src="./src/assets/צילום מסך 2023-09-18 160818.png" alt="" />
     </div>
     <div className="contact-right">
-      <h2 className='header'>Contact Us</h2>
+      <h2 className='contact-header'>Contact Us</h2>
       <div className='contact-us-form'>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
