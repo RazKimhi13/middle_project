@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.gallery-container {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+  color: #451952;
+
+}
+
+.gallery-text-container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 16px;
+  margin: 5vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 1s, transform 0.3s;
+  border-radius: 10px;
+}
+
+.card img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}

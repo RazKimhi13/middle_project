@@ -23,9 +23,9 @@ function Home() {
           <button className='registerbtn'>Register</button>
         </Link>
       </div>
-      <h1>{loggedUser && "hello "+loggedUser}</h1>
-     
-
+      <h1>{loggedUser.username && "hello "+ loggedUser.username }</h1>
+{      console.log(loggedUser)
+}
     </div>
   );
 }

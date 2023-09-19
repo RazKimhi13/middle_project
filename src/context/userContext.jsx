@@ -10,7 +10,10 @@ export const UserContext = createContext({
 
 // eslint-disable-next-line react/prop-types
 const UserProvider = ({ children }) => {
-  const [loggedUser, setLoggedUser] = useState("");
+  const [loggedUser, setLoggedUser] = useState({
+    username: "",
+    password: ""
+  });
   const navigate = useNavigate();
   const [users, setUsers] = useState(
     JSON.parse(localStorage.getItem("users")) || []
@@ -36,7 +39,7 @@ const UserProvider = ({ children }) => {
     if (!passwordMatch) {
       return alert("Wrong credentials!");
     }
-    setLoggedUser(username);
+    setLoggedUser({username: username, password: password});
     alert("Logged in!");
     navigate("/");
   };
