@@ -7,7 +7,6 @@ import { useContext } from 'react';
 
 function Home() {
 
-  const { users } = useContext(UserContext);
   const { loggedUser } = useContext(UserContext);
 
 
@@ -28,7 +27,7 @@ function Home() {
         <button className='registerbtn'>Register</button>
       </Link>
     </div>
-    <h1>{loggedUser && "hello " + loggedUser}</h1>
+    <h1>{loggedUser.username && "hello " + loggedUser.username}</h1>
 
 
   </div>

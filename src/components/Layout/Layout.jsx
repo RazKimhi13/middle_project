@@ -43,17 +43,17 @@ const Layout = () => {
                 <Link to="/Plan">Plan</Link>
               </li>
 
-              {loggedUser === "raz" && (
+              {loggedUser.username === "raz" && (
                 <li>
                   <Link to="/admin">Admin</Link>
                 </li>
               )}
-               {loggedUser && (
+               {loggedUser.username && (
                 <li>
                   <Link to="/myPlannings">My plannings</Link>
                 </li>
               )}
-               {loggedUser && (
+               {loggedUser.username && (
                 <li>
                   <Link to="/payment">Payment</Link>
                 </li>
