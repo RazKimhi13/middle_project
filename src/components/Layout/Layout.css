@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 body {
   margin: 0;
   padding: 0;
+  background-color: #FFEEF4;
 
-  background-color: #fcfcfc;
+
 }
 
 .container {
@@ -18,7 +20,7 @@ body {
 }
 
 .navbar {
-  height: 60px;
+  height: 5rem;
   background-color: #f78ca2;
   position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -27,8 +29,7 @@ body {
 /* .logo {
 } */
 .logo img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
 }
 
 .menu-icon {
@@ -53,7 +54,9 @@ body {
   font-weight: 500;
   color: #451952;
   text-decoration: none;
-  font-family: "Dancing Script", cursive;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Courgette", cursive;
+
   position: relative;
 
   transition: 1s;
