@@ -14,7 +14,7 @@ const Layout = () => {
     setShowNavbar(!showNavbar);
   };
 
-  const test = "master"
+  const test = "new"
   return (
     <>
       <nav className="navbar">
