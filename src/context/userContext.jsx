@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 export const UserContext = createContext({
   users: [],
   setUsers: () => {},
@@ -11,19 +10,19 @@ export const UserContext = createContext({
 
 // eslint-disable-next-line react/prop-types
 const UserProvider = ({ children }) => {
+  const [loggedUser, setLoggedUser] = useState("");
   const navigate = useNavigate();
   const [users, setUsers] = useState(
     JSON.parse(localStorage.getItem("users")) || []
   );
 
-  
   const createNewUser = (newUser) => {
     setUsers((prev) => {
       if (prev.some((user) => user.username === newUser.username)) {
         return prev;
       }
       localStorage.setItem("users", JSON.stringify([...prev, newUser]));
-      navigate("/Login"); 
+      navigate("/Login");
       return [...prev, newUser];
     });
   };
@@ -37,13 +36,13 @@ const UserProvider = ({ children }) => {
     if (!passwordMatch) {
       return alert("Wrong credentials!");
     }
-     alert("Logged in!");
-     navigate("/"); 
-
+    setLoggedUser(username);
+    alert("Logged in!");
+    navigate("/");
   };
 
   return (
-    <UserContext.Provider value={{ users, setUsers, createNewUser, login }}>
+    <UserContext.Provider value={{ users, setUsers, createNewUser, login, loggedUser }}>
       {children}
     </UserContext.Provider>
   );

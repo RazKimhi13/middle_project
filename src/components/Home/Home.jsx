@@ -2,8 +2,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; 
+import { UserContext } from "../../context/userContext";
+import { useContext } from 'react';
 
 function Home() {
+
+  const { users } = useContext(UserContext);
+  const { loggedUser } = useContext(UserContext);
+
+
+
   return (<div className='home-container'>
    
       <h1>Home</h1> 
@@ -15,6 +23,9 @@ function Home() {
           <button>Register</button>
         </Link>
       </div>
+      <h1>{loggedUser && "hello "+loggedUser}</h1>
+     
+
     </div>
   );
 }
