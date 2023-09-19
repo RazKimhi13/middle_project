@@ -15,7 +15,7 @@ function Home() {
 
     <video autoPlay loop className='weddingvideo' src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4" ></video>
    <div class="header"><h2>WELCOME</h2>
-      <h5 >Let's bring your dream to reality!</h5>
+      <h5 >Let's make your dream come true!</h5>
     </div>
     
    
