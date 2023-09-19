@@ -1,7 +1,8 @@
-import "./Register.css"
-import { useContext } from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom"; 
 import { useForm } from "react-hook-form";
 import { UserContext } from "../../context/userContext";
+import "./Register.css";
 
 const Register = () => {
   const { register, handleSubmit } = useForm();
@@ -9,22 +10,29 @@ const Register = () => {
 
   return (
     <div className="register-container">
-    <form onSubmit={handleSubmit(createNewUser)}>
-      <input
-        type="text"
-        placeholder="Username"
-        className="input-field"
-        {...register("username", { required: true })}
-      />
-      <input
-        type="text"
-        placeholder="Password"
-        className="input-field"
-        {...register("password", { required: true })}
-      />
-      <button type="submit" className="submit-button"
-      >Submit</button>
-    </form></div>
+      <h2>Create an Account</h2>
+      <form onSubmit={handleSubmit(createNewUser)}>
+        <input
+          type="text"
+          placeholder="Username"
+          className="input-field"
+          {...register("username", { required: true })}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          className="input-field"
+          {...register("password", { required: true })}
+        />
+        <button type="submit" className="submit-button">
+          Register
+        </button>
+      </form>
+      <p>
+        Already have an account?{" "}
+        <Link to="/login">Login here</Link>
+      </p>
+    </div>
   );
 };
 
