@@ -28,12 +28,12 @@ const Layout = () => {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/register">Register</Link>
               </li>
               <li>
                 <Link to="/Login">Login</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/ContactUs">contact us</Link>
               </li>
