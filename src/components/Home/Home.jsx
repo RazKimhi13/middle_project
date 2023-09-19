@@ -13,8 +13,8 @@ function Home() {
 
   return (<div className='home-container'>
 
-    <video autoPlay loop className='weddingvideo' src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4" ></video>
-   <div class="header"><h2>WELCOME</h2>
+    <video autoPlay loop muted className='weddingvideo' src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4" ></video>
+   <div class="header"><h2>{loggedUser.username && "WELCOME " + loggedUser.username}</h2>
       <h5 >Let's make your dream come true!</h5>
     </div>
     
@@ -27,8 +27,18 @@ function Home() {
         <button className='registerbtn'>Register</button>
       </Link>
     </div>
-    <h1>{loggedUser.username && "hello " + loggedUser.username}</h1>
+    <br />
+    <br />
+    <br />
+    <div>
+      <div className='webimg'>
+        <img src=".\src\assets\צילום מסך 2023-09-19 160800.png" alt="" />
+      </div>
+    <div className='webtext'>
+<p>description</p>
 
+    </div>
+</div>
 
   </div>
   );
