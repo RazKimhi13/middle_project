@@ -18,5 +18,21 @@
     margin-top: 7vh; 
     
   }
-  
-  
+  .logbtn{
+    background-color: beige;
+    width: 6vw;
+    height: 4vh;
+    border-radius: 2vw;
+  }
+  .registerbtn{
+    background-color: #f78ca298;
+    width: 6vw;
+    height: 4vh;
+    border-radius: 2vw;
+  }
+  .logbtn:hover{
+    cursor: pointer;
+  }
+  .registerbtn:hover{
+    cursor: pointer;
+  }
