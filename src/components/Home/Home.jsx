@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css'; 
+import './Home.css';
 import { UserContext } from "../../context/userContext";
 import { useContext } from 'react';
 
@@ -13,20 +13,25 @@ function Home() {
 
 
   return (<div className='home-container'>
-   
-      <h1>Home</h1> 
-      <div className="buttons-container">
-        <Link to="/login">
-          <button className='logbtn'>Login</button>
-        </Link>
-        <Link to="/register">
-          <button className='registerbtn'>Register</button>
-        </Link>
-      </div>
-      <h1>{loggedUser && "hello "+loggedUser}</h1>
-     
 
+    <video autoPlay loop className='weddingvideo' src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4" ></video>
+   <div class="header"><h2>WELCOME</h2>
+      <h5 >Let's bring your dream to reality!</h5>
     </div>
+    
+   
+    <div className="buttons-container">
+      <Link to="/login">
+        <button className='logbtn'>Login</button>
+      </Link>
+      <Link to="/register">
+        <button className='registerbtn'>Register</button>
+      </Link>
+    </div>
+    <h1>{loggedUser && "hello " + loggedUser}</h1>
+
+
+  </div>
   );
 }
 
