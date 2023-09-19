@@ -17,10 +17,10 @@ function Home() {
       <h1>Home</h1> 
       <div className="buttons-container">
         <Link to="/login">
-          <button>Login</button>
+          <button className='logbtn'>Login</button>
         </Link>
         <Link to="/register">
-          <button>Register</button>
+          <button className='registerbtn'>Register</button>
         </Link>
       </div>
       <h1>{loggedUser && "hello "+loggedUser}</h1>
