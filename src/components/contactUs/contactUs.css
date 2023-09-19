@@ -44,30 +44,29 @@ margin: 2vw;}
     color: #333;
   }
   
-  input[type="text"],
-  input[type="email"],
-  textarea {
+  .input-field {
     width: 100%;
     padding: 1vw;
-    border: 0.1vw solid #ccc;
-    border-radius: 0.5vw;
+    margin: 1vw 0;
+    border: 0.2vw solid #ccc;
+    border-radius: 0.4vw;
   }
   
   textarea {
     resize: vertical;
   }
   
-  button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 1vw;
-    background-color: #007bff;
+  .submit-button {
+    background-color: #ffafaf;
     color: #fff;
     border: none;
-    border-radius: 0.5vw;
+    border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  button[type="submit"]:hover {
-    background-color: #0056b3;
+  .submit-button:hover {
+    background-color: #ff8080; 
   }
+  

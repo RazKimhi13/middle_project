@@ -32,7 +32,7 @@ function ContactUs() {
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
-          <input
+          <input className="input-field"
             type="text"
             id="name"
             name="name"
@@ -43,7 +43,7 @@ function ContactUs() {
         </div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
-          <input
+          <input className="input-field"
             type="email"
             id="email"
             name="email"
@@ -54,7 +54,7 @@ function ContactUs() {
         </div>
         <div className="form-group">
           <label htmlFor="message">Message:</label>
-          <textarea
+          <textarea className="input-field"
             id="message"
             name="message"
             value={formData.message}
@@ -62,7 +62,8 @@ function ContactUs() {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className='submit-button'
+        >Submit</button>
       </form>
     </div>
   </div>
