@@ -5,7 +5,7 @@
 
 
 .buttons-container {
-  position: fixed;
+  position: absolute;
   top: 3vh;
   right: 2vw;
   display: flex;
@@ -14,10 +14,7 @@
   gap: 1vw;
 }
 
-.buttons-container button {
-  margin-top: 7vh;
 
-}
 
 .logbtn {
   background-color: beige;
@@ -43,7 +40,7 @@
 
 .weddingvideo {
   background-repeat: no-repeat;
-  filter: blur(2px);
+  filter: blur(3px);
   height: 80%;
   object-fit: cover;
   opacity: .95;
@@ -54,10 +51,13 @@
 }
 
 .header {
+  font-size: 2rem;
+  font-family: "Courgette", cursive;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%; 
   transform: translate(-50%, -50%); 
   text-align: center;
-  color: white; 
+  color: rgb(249, 240, 240); 
+  text-shadow: 0.4vw 0.2vw rgba(0, 0, 0, 0.481);
 }
