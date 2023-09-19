@@ -12,6 +12,7 @@ import NoPage from "../NoPage/NoPage";
 import Layout from "../Layout/Layout";
 import Home from "../Home/Home";
 import Admin from "../Admin/Admin";
+import MyPlannings from "../MyPlannings/MyPlannings";
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="Plan" element={<Plan />} />
           <Route path="Payment" element={<Payment />} />
+          <Route path="myPlannings" element={<MyPlannings />} />
           <Route path="admin" element={<Admin />} />
           <Route path="*" element={<NoPage />} />
         </Route>

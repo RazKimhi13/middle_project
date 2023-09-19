@@ -47,6 +47,16 @@ const Layout = () => {
                   <Link to="/admin">Admin</Link>
                 </li>
               )}
+               {loggedUser && (
+                <li>
+                  <Link to="/myPlannings">My plannings</Link>
+                </li>
+              )}
+               {loggedUser && (
+                <li>
+                  <Link to="/payment">Payment</Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>
