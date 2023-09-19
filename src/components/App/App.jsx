@@ -11,6 +11,7 @@ import Payment from "../payment/payment";
 import NoPage from "../NoPage/NoPage";
 import Layout from "../Layout/Layout";
 import Home from "../Home/Home";
+import Admin from "../Admin/Admin";
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="Plan" element={<Plan />} />
           <Route path="Payment" element={<Payment />} />
+          <Route path="admin" element={<Admin />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
