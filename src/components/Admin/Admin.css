@@ -1,0 +1,11 @@
+.grid-container-admin {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns */
+    grid-gap: 10px; /* Gap between grid items */
+    text-align: center;
+  }
+
+  .grid-item-admin {
+    border: 1px solid #ccc; /* Add borders for better visualization */
+    padding: 5px;
+  }
