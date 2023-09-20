@@ -1,3 +1,6 @@
+body{
+  background-color: white;
+}
 .home-container {
   position: relative;
   height: 100vh;
@@ -69,6 +72,62 @@
 .header h5{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.webimg img{
-  width: 33%;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two equal columns */
+  gap: 4vw; /* Add gap between columns */
 }
+
+.container1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.webimg1 img {
+  width: 55vh;}
+  .webimg2 img {
+    width:55vh;}
+    
+.container2 h4{
+  text-align: center;
+}
+.container2 p{
+  text-align: center;
+}
+.webtext1 {
+  text-align: center;
+}
+
+
+.marquee-container {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee {
+  font-size: 6vh;
+  color: rgb(182, 118, 246);
+  padding:2vh 0 ;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
