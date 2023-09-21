@@ -7,7 +7,6 @@ import Gallery from "../gallery/gallery";
 import ContactUs from "../contactUs/contactUs";
 import Login from "../Login/Login";
 import Plan from "../Plan/Plan";
-import Payment from "../payment/payment";
 import NoPage from "../NoPage/NoPage";
 import Layout from "../Layout/Layout";
 import Home from "../Home/Home";
@@ -28,7 +27,6 @@ function App() {
           <Route path="ContactUs" element={<ContactUs />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="Plan" element={<Plan />} />
-          <Route path="Payment" element={<Payment />} />
           <Route path="myPlannings" element={<MyPlannings />} />
           <Route path="admin" element={<Admin />} />
           <Route path="*" element={<NoPage />} />

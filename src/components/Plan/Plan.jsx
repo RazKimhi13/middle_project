@@ -43,7 +43,7 @@ export default function Plan() {
             <StepOne title="Budget" />
             <StepTwo title="Venue" />
             <StepThree title="Date" />
-            <StepFour title="Step 4" />
+            <StepFour title="Payment" />
           </MultiStep>
         </div>
 

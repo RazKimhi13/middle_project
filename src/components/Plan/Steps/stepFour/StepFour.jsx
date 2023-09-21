@@ -1,11 +1,103 @@
-import React from 'react'
-import "./StepFour.css";
+import { useForm } from 'react-hook-form';
+import { useCreditCardValidator, images } from 'react-creditcard-validator';
 
+const StepFour = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    mode: 'onBlur',
+    defaultValues: {
+      cardNumber: '',
+      expiryDate: '',
+      cvc: '',
+    },
+    criteriaMode: 'all',
+    shouldFocusError: true,
+  });
 
-function StepFour() {
+  const {
+    getCardNumberProps,
+    getCardImageProps,
+    getCVCProps,
+    getExpiryDateProps,
+    meta: { erroredInputs },
+  } = useCreditCardValidator();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    alert('Payment saved successfully!');
+    // Perform payment processing logic here
+  };
+
   return (
-    <div className='step-container' >StepFour</div>
-  )
-}
+    <form onSubmit={handleSubmit(onSubmit)} className="custom-payment-form">
+      <main>
+        <h1 className="custom-heading">React CreditCard Validator</h1>
 
-export default StepFour
+        <div className="custom-input-group">
+          <svg {...getCardImageProps({ images })} className="custom-card-image" />
+          <label htmlFor="cardNumber" className="custom-label">
+            Card Number
+          </label>
+          <input
+            {...register('cardNumber', {
+              required: 'Card Number is required',
+              pattern: {
+                value: /^[0-9]{16}$/,
+                message: 'Invalid Card Number',
+              },
+            })}
+            className="custom-input"
+            id="cardNumber"
+          />
+          <small className="custom-error-message">
+            {errors.cardNumber && errors.cardNumber.message}
+          </small>
+          <small className="custom-error-message">
+            {erroredInputs.cardNumber && erroredInputs.cardNumber}
+          </small>
+        </div>
+
+        <div className="custom-multi-input">
+          <div className="custom-input-group">
+            <label htmlFor="expiryDate" className="custom-label">
+              Valid Till
+            </label>
+            <input
+              {...register('expiryDate', { required: 'Expiry Date is required' })}
+              className="custom-input"
+              id="expiryDate"
+            />
+            <small className="custom-error-message">
+              {errors.expiryDate && errors.expiryDate.message}
+            </small>
+            <small className="custom-error-message">
+              {erroredInputs.expiryDate && erroredInputs.expiryDate}
+            </small>
+          </div>
+
+          <div className="custom-input-group">
+            <label htmlFor="cvc" className="custom-label">
+              CVC
+            </label>
+            <input
+              {...register('cvc', { required: 'CVC is required' })}
+              className="custom-input"
+              id="cvc"
+            />
+            <small className="custom-error-message">{errors.cvc && errors.cvc.message}</small>
+            <small className="custom-error-message">{erroredInputs.cvc && erroredInputs.cvc}</small>
+          </div>
+        </div>
+
+        <button type="submit" className="custom-submit-button">
+          Submit
+        </button>
+      </main>
+    </form>
+  );
+};
+
+export default StepFour;
