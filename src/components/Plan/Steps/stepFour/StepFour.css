@@ -1,0 +1,80 @@
+/* Style the form container */
+.custom-payment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+  }
+  
+  /* Style the heading */
+  .custom-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style input groups */
+  .custom-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Style labels */
+  .custom-label {
+    flex: 1;
+    margin-right: 10px;
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+  }
+  
+  /* Style input fields */
+  .custom-input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+  }
+  
+  /* Style error messages */
+  .custom-error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+  }
+  
+  /* Style the card image */
+  .custom-card-image {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Style the multi-input group */
+  .custom-multi-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the submit button */
+  .custom-submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+  }
+  
+  /* Style the submit button on hover */
+  .custom-submit-button:hover {
+    background-color: #0056b3;
+  }
+  

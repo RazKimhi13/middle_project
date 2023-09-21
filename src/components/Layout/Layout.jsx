@@ -56,11 +56,7 @@ const Layout = () => {
                   <Link to="/myPlannings">My plannings</Link>
                 </li>
               )}
-              {loggedUser.username && (
-                <li>
-                  <Link to="/payment">Payment</Link>
-                </li>
-              )}
+          
             </ul>
           </div>
         </div>
