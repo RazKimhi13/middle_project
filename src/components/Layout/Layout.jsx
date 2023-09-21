@@ -14,11 +14,7 @@ const Layout = () => {
     setShowNavbar(!showNavbar);
   };
 
-<<<<<<< HEAD
   
-=======
-  const test = "new";
->>>>>>> 9e9a7591042482db2aa7b1fa0e5bb624cf105fd7
   return (
     <>
       <nav className="navbar">
