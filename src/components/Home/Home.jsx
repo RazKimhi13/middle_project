@@ -72,37 +72,96 @@ function Home() {
     </div>
     <br />
     <div className='bigDiv'>
-      <div className='firstCard'>
-      <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-19 160913.png" alt="" />
+      <div className='Card'>
+      <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-20 134617.png" alt="" />
 
         <div className='alltext'>
           <div className='koteret'>
-communication
+Communication
           </div>
           <p className='kituv'>
-with you all the way!
+          Celebrate love with us every step of the way! Together, we'll piece together every element of your dream wedding, and create an unforgettable production! 
           </p>
         </div>
       </div>
-      <div className='secondCard'>
+      <div className='Card'>
         <div className='alltext'>
-        <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-19 160913.png" alt="" />
+        <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-20 134657.png" alt="" />
 
           <div className='koteret'>
-communication
+The little detals..
           </div>
           <p className='kituv'>
-with you all the way!
+          Elevate every aspect of your special day, from meticulously crafting the perfect menu and handpicking the ideal suppliers tailored just for you.
           </p>
         </div>
       </div>
+      <div className='Card'>
+        <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-21 114457.png" alt="" />
 
+        <div className='alltext'>
+          <div className='koteret'>
+          Exceptional staff
+          </div>
+          <p className='kituv'>
+          Our accomplished staff brings a wealth of expertise to the table, ensuring every task is executed flawlessly. you will be guided by seasoned professionals who excelence at what they do.
+          </p>
+        </div>
+      </div>
+      <div className='Card'>
+        <div className='alltext'>
+      <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-20 134725.png" alt="" />
 
-
-
-
-
+          <div className='koteret'>
+Discover Your Dream Venue
+          </div>
+          <p className='kituv'>
+          
+Selecting the perfect venue is a crucial step in creating your dream event. Our team is here to guide you through an array of stunning locations, helping you find the ideal setting.
+          </p>
+        </div>
+      </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+
+
+    <div>
+      <div> 
+        <div>
+          <div>
+            <img src=".\src\assets\icons\website-icon.png" alt="" />
+          </div>
+          <div>
+            <img src=".\src\assets\icons\website-icon2.png" alt="" />
+          </div>
+        </div>
+        <div>
+          <div>help</div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <div>account</div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        
+       
+      </div>
+    </div>
+
+
+
+
+
+
+
   </div>
   );
 }
