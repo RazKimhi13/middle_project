@@ -1,3 +1,4 @@
+// StepOne.js
 import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../../../../context/userContext";
@@ -12,12 +13,15 @@ function StepOne() {
   };
 
   return (
-    <form className="my-form" onSubmit={handleSubmit(({ budget }) => {
-      const updatedUser = { ...loggedUser };
-      updatedUser.budget = budget;
-      setLoggedUser(updatedUser);
-      alert("Budget updated!")
-    })}>
+    <form
+      className="my-form"
+      onSubmit={handleSubmit(({ budget }) => {
+        const updatedUser = { ...loggedUser };
+        updatedUser.budget = budget;
+        setLoggedUser(updatedUser);
+        alert("Budget updated!");
+      })}
+    >
       <p className="form-label">Please enter your budget</p>
       <div className="form-input">
         <input

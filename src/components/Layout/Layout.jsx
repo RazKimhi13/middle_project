@@ -40,7 +40,7 @@ const Layout = () => {
                 <Link to="/gallery">gallery </Link>
               </li>
 
-              {loggedUser.username === "raz" && (
+              {loggedUser.username && (
                 <li>
                   <Link to="/Plan">Plan</Link>
                 </li>

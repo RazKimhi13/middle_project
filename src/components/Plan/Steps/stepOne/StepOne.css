@@ -1,30 +1,30 @@
 .my-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 300px; /* Changed to max-width for responsiveness */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
-    background-color: #fff; /* Added a white background color */
-  }
-  
-  .form-label {
-    margin-bottom: 10px;
-  }
-  
-  .form-input input[type="range"] {
-    width: 100%;
-  }
-  
-  .budget-value {
-    margin-top: 10px;
-  }
-  
-  .submit-button {
-    margin-top: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.form-label {
+  margin-bottom: 10px;
+}
+
+.form-input input[type="range"] {
+  width: 100%;
+}
+
+.budget-value {
+  margin-top: 10px;
+}
+
+.submit-button {
+  margin-top: 10px;
+}

@@ -1,32 +1,41 @@
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .gallery-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card {
-    padding: 16px;
-    margin: 5vh;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #f0f0f0;
-  }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-    opacity: 0.8;
-    transition: opacity 1s, transform 0.3s;
-    border-radius: 10px;
-  }
-  
-  .card img:hover {
-    opacity: 1;
-    transform: scale(1.05);
-  }
+/* stepTwo.css */
+
+.step-two-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card {
+  padding: 16px;
+  margin: 5vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+
+.image-card img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 1s, transform 0.3s;
+  border-radius: 10px;
+}
+
+.image-card img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
