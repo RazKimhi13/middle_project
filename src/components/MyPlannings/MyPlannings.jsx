@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+// MyPlannings.js
+import React, { useContext, useState, useEffect } from "react";
 import "./MyPlannings.css";
 import { UserContext } from "../../context/userContext";
 import Calendar from 'react-calendar';
@@ -6,7 +7,13 @@ import 'react-calendar/dist/Calendar.css';
 
 export default function MyPlannings() {
   const { loggedUser } = useContext(UserContext);
-  const [value, onChange] = useState(new Date());
+  const [value, setValue] = useState(new Date());
+
+  useEffect(() => {
+    if (loggedUser.chosenDay) {
+      setValue(loggedUser.chosenDay);
+    }
+  }, [loggedUser.chosenDay]);
 
   return (
     <div className="my-plannings-container">
@@ -32,7 +39,7 @@ export default function MyPlannings() {
         )}
       </div>
       <main className="Sample__container__content">
-        <Calendar onChange={onChange} showWeekNumbers value={value} />
+        <Calendar  showWeekNumbers value={value} />
       </main>
     </div>
   );

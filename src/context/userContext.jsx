@@ -14,7 +14,8 @@ const UserProvider = ({ children }) => {
     username: "",
     password: "",
     budget: 0,
-    venue: ""
+    venue: "",
+    chosenDay: "",
   });
   const navigate = useNavigate();
   const [users, setUsers] = useState(
