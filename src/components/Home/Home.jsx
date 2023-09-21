@@ -28,7 +28,7 @@ function Home() {
       </Link>
     </div>
     <br />
-  
+
     <br />
     <hr />
     <div className='container1'>
@@ -53,24 +53,56 @@ function Home() {
         <h4>Customized Packages</h4>
         <p>
 
-At Happily ever after, we understand that every couple is unique. That's why we offer customizable wedding packages tailored to your specific needs and preferences. Whether you need full-service planning or day-of coordination, we have the perfect package for you.</p>
+          At Happily ever after, we understand that every couple is unique. That's why we offer customizable wedding packages tailored to your specific needs and preferences. Whether you need full-service planning or day-of coordination, we have the perfect package for you.</p>
         <br />
         <h4>
-        Let Us Make Your Wedding Dreams Come True
+          Let Us Make Your Wedding Dreams Come True
         </h4>
-      <p>
+        <p>
 
-Trust Happily ever after to make your wedding day unforgettable. Our passion for creating beautiful, meaningful weddings shines through in every detail. Contact us today to begin the journey towards the wedding of your dreams.</p>
+          Trust Happily ever after to make your wedding day unforgettable. Our passion for creating beautiful, meaningful weddings shines through in every detail. Contact us today to begin the journey towards the wedding of your dreams.</p>
       </div>
       <div className='webimg2'>
         <img src=".\src\assets\צילום מסך 2023-09-19 160913.png" alt="" />
       </div>
     </div>
-<hr />
-<div className='marquee-container'>
-<span className="marquee"> YOU CHOOSE / WE MAKE IT COME TRUE / YOU CHOOSE / WE MAKE IT COME TRUE / YOU CHOOSE / WE MAKE IT COME TRUE / YOU CHOOSE / WE MAKE IT COME TRUE /</span> 
-</div>
+    <hr />
+    <div className='marquee-container'>
+      <p className="marquee">YOU CHOOSE / WE MAKE IT COME TRUE / YOU CHOOSE / WE MAKE IT COME TRUE / YOU CHOOSE / WE MAKE IT COME TRUE / YOU CHOOSE / WE MAKE IT COME TRUE /</p>
+    </div>
+    <br />
+    <div className='bigDiv'>
+      <div className='firstCard'>
+      <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-19 160913.png" alt="" />
 
+        <div className='alltext'>
+          <div className='koteret'>
+communication
+          </div>
+          <p className='kituv'>
+with you all the way!
+          </p>
+        </div>
+      </div>
+      <div className='secondCard'>
+        <div className='alltext'>
+        <img className='cardImg' src=".\src\assets\צילום מסך 2023-09-19 160913.png" alt="" />
+
+          <div className='koteret'>
+communication
+          </div>
+          <p className='kituv'>
+with you all the way!
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
   </div>
   );
 }

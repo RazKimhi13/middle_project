@@ -25,7 +25,7 @@
 .contact-us-container img {
   height: 60vh;
   margin: 2vw;
-  margin-top: 8vh;
+  margin-top: 6vh;
 }
 
 .contact-us {
@@ -76,3 +76,6 @@ textarea {
 .submit-button:hover {
   background-color: #ff8080;
 }
+@media (max-width: 767px) {
+  .contact-us-container img {
+display: none;}}
