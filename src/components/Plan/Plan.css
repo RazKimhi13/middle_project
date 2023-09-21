@@ -7,13 +7,22 @@
   align-items: center;
   font-family: "Courgette", cursive;
   font-size: 2rem;
-  color: #451952;
   flex-direction: column;
-
 }
 
-.multistep-container {
+  /* buttons div */
+.flex-container div{
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 5vh;
 }
+
+
+
+
+button{
+  color: #451952;
+  font-family: "Courgette", cursive;
+}
+
+

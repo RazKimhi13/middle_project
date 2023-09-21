@@ -10,37 +10,40 @@ export default function Plan() {
   return (
     <>
       <div className="flex-container">
-        <h1>lets start plannig!</h1>
+        <h1>lets start planning!</h1>
 
         <MultiStep
-          className="multistep-container"
           activeStep={0}
           prevButton={{
             title: "Back",
             style: {
-              backgroundColor: "white",
+              backgroundColor: "rgb(250, 249, 255)",
               width: "6vw",
               height: "4vh",
-              border: "1px solid white",
+              border: "2px solid black",
               borderRadius: "2vw",
+              marginLeft: "30px"
+
             },
           }}
           nextButton={{
-            title: "next",
+            title: "Next",
             style: {
               backgroundColor: "rgb(198, 142, 251)",
               width: "6vw",
               height: "4vh",
-              border: "2px solid white",
+              border: "2px solid black",
               borderRadius: "2vw",
+              marginLeft: "40px"
             },
           }}
         >
-          <StepOne title="wedding hall" />
-          <StepTwo title="Step 2" />
+          <StepOne title="Budget" />
+          <StepTwo title="Venue" />
           <StepThree title="Step 3" />
           <StepFour title="Step 4" />
         </MultiStep>
+
       </div>
     </>
   );
