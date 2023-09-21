@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./stepTwo.css";
+import { UserContext } from "../../../../context/userContext";
 
 function StepTwo() {
+
+  const { loggedUser, setLoggedUser } = useContext(UserContext);
+
+
   const images = [
     "https://media.istockphoto.com/id/1171764854/video/bridegroom-exchanging-wedding-ring-with-bride.jpg?s=640x640&k=20&c=j5BojQPa3JHSVUSOvzlxV2elWv9ccRNHlI983-h1JBo=",
     "https://media.istockphoto.com/id/1171775505/video/happy-married-couple-kissing-while-leaving-church.jpg?s=640x640&k=20&c=cJXfhzzCxDzkn3NsnekRuXR-Yhyw5e9sQqIM-EVu2-E=",
@@ -21,19 +26,29 @@ function StepTwo() {
   ];
   return (
     <>
-      <p> StepTwo</p>
-
-      <div className="gallery">
+    <div className="step-two-container">
+      <p>Select a Venue</p>
+      <div className="image-gallery">
         {images.map((image, index) => (
-          <div key={index} className="gallery-item">
-            <div className="card">
-              <img src={image} alt={`Image ${index}`} />
+          <div key={index} className="image-gallery-item">
+            <div className="image-card">
+              <img
+                onClick={() => {
+                  const updatedUser = { ...loggedUser };
+                  updatedUser.venue = image;
+                  setLoggedUser(updatedUser);
+                  console.log(updatedUser);
+                  alert("Venue updated!");
+                }}
+                src={image}
+                alt={`Image ${index}`}
+              />
             </div>
           </div>
-        ))} 
-        <img src={images[0]} alt="" />
+        ))}
       </div>
-    </>
+    </div>
+  </>
   );
 }
 
