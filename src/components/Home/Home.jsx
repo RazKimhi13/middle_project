@@ -130,7 +130,7 @@ Selecting the perfect venue is a crucial step in creating your dream event. Our 
 
 
     <div>
-      <div> 
+      <div className='divof'> 
         <div>
           <div>
             <img src=".\src\assets\icons\website-icon.png" alt="" />
@@ -141,7 +141,7 @@ Selecting the perfect venue is a crucial step in creating your dream event. Our 
         </div>
         <div>
           <div>help</div>
-          <div></div>
+          <div>contact us</div>
           <div></div>
           <div></div>
         </div>
@@ -152,7 +152,7 @@ Selecting the perfect venue is a crucial step in creating your dream event. Our 
           <div></div>
         </div>
         
-       
+      
       </div>
     </div>
 
