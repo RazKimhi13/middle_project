@@ -216,3 +216,23 @@ display: grid;
   }
 }
 
+.lists{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-around;
+
+}
+.lists h3{text-decoration: underline;
+
+}
+.lists div{
+  cursor: pointer;
+}
+.sideLogo img{
+  margin-top: 2vh;
+  width: 10vw;
+}
+.footerLink{
+  color: black;
+    text-decoration: none;
+}

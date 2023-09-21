@@ -129,30 +129,30 @@ Selecting the perfect venue is a crucial step in creating your dream event. Our 
     <hr />
 
 
-    <div>
-      <div className='divof'> 
-        <div>
-          <div>
-            <img src=".\src\assets\icons\website-icon.png" alt="" />
-          </div>
+    <div className='footer'>
+      <div className='lists'> 
+        <div className='sideLogo'>
+        
           <div>
             <img src=".\src\assets\icons\website-icon2.png" alt="" />
           </div>
         </div>
-        <div>
-          <div>help</div>
-          <div>contact us</div>
-          <div></div>
-          <div></div>
+        <div className='helpList'>
+          <h3>help</h3>
+          <div><Link to="ContactUs" className='footerLink'>contact us</Link>
+            </div>
+          <div>support</div>
+          <div>terms of use</div>
         </div>
         <div>
-          <div>account</div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <h3>account</h3>
+         
+          <div ><Link to="register" className='footerLink'>register</Link></div>
+          <div ><Link to="Login" className='footerLink'>login</Link></div>
         </div>
-        
-      
+      </div>
+      <div className='socials'>
+inst
       </div>
     </div>
 
