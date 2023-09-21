@@ -20,8 +20,9 @@ body {
 }
 
 .navbar {
+  z-index: 1;
   height: 5rem;
-  background-color: rgb(254, 254, 206);
+  background-color:#fff2d8;
   position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -114,6 +115,7 @@ body {
   }
 
   .nav-elements {
+    margin-top: 1rem;
     position: absolute;
     right: 0;
     top: 60px;
