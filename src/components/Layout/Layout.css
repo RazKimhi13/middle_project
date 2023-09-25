@@ -140,3 +140,49 @@ body {
     margin-top: 22px;
   }
 }
+.footer{
+  background-color: #d0d0cf;
+}
+.lists{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-around;
+
+}
+.lists h3{text-decoration: underline;
+
+}
+.lists div{
+  cursor: pointer;
+}
+.sideLogo img{
+  margin-top: 2vh;
+  width: 10vw;
+}
+.footerLink{
+  color: black;
+    text-decoration: none;
+}
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.socials div{
+  margin: 2vw;
+  height: 2vh;
+}
+.instegramLOGO{
+  height: 3vh;
+}
+.facebookLOGO{
+  height: 3vh;
+}
+.linkdinLOGO{
+  height: 3vh;
+}
+
+@media screen and (max-width: 768px) {
+  .sideLogo{
+display: none;
+position: fixed;}}

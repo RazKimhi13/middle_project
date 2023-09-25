@@ -11,7 +11,9 @@ function Home() {
 
 
 
-  return (<div className='home-container'>
+  return (
+    <div>
+  <div className='home-container'>
 
     <video autoPlay loop muted className='weddingvideo' src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4" ></video>
     <div class="header"><h2>{loggedUser.username && "WELCOME " + loggedUser.username}</h2>
@@ -28,7 +30,6 @@ function Home() {
       </Link>
     </div>
     <br />
-
     <br />
     <hr />
     <div className='container1'>
@@ -122,49 +123,7 @@ Selecting the perfect venue is a crucial step in creating your dream event. Our 
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <hr />
-
-
-    <div className='footer'>
-      <div className='lists'> 
-        <div className='sideLogo'>
-        
-          <div>
-            <img src=".\src\assets\icons\website-icon2.png" alt="" />
-          </div>
-        </div>
-        <div className='helpList'>
-          <h3>help</h3>
-          <div><Link to="ContactUs" className='footerLink'>contact us</Link>
-            </div>
-          <div>support</div>
-          <div>terms of use</div>
-        </div>
-        <div>
-          <h3>account</h3>
-         
-          <div ><Link to="register" className='footerLink'>register</Link></div>
-          <div ><Link to="Login" className='footerLink'>login</Link></div>
-        </div>
-      </div>
-      <br />
-      <div className='socials'>
-<div><a href="https://www.instagram.com/eden_milo/"><img className='instegramLOGO' src=".\src\assets\instegramLOGO.png" alt="" /></a></div>
-<div><a href="https://www.facebook.com/"><img className='facebookLOGO' src=".\src\assets\facebookLOGO.png" alt="" /></a></div>
-<div><a href="https://www.linkedin.com/in/eden-milo-192083293/"><img className='linkdinLOGO' src=".\src\assets\linkdinLOGO.png" alt="" /></a></div>
-      </div>
-    </div>
-
-
-
-
-
-
-
+  </div>
   </div>
   );
 }
