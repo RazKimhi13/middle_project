@@ -236,3 +236,20 @@ display: grid;
   color: black;
     text-decoration: none;
 }
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.socials div{
+  margin: 1vw;
+}
+.instegramLOGO{
+  width: 3vw;
+}
+.facebookLOGO{
+  width: 3vw;
+}
+.linkdinLOGO{
+  width: 3vw;
+}

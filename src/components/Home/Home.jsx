@@ -151,8 +151,11 @@ Selecting the perfect venue is a crucial step in creating your dream event. Our 
           <div ><Link to="Login" className='footerLink'>login</Link></div>
         </div>
       </div>
+      <br />
       <div className='socials'>
-inst
+<div><a href="https://www.instagram.com/eden_milo/"><img className='instegramLOGO' src=".\src\assets\instegramLOGO.png" alt="" /></a></div>
+<div><a href="https://www.facebook.com/"><img className='facebookLOGO' src=".\src\assets\facebookLOGO.png" alt="" /></a></div>
+<div><a href="https://www.linkedin.com/in/eden-milo-192083293/"><img className='linkdinLOGO' src=".\src\assets\linkdinLOGO.png" alt="" /></a></div>
       </div>
     </div>
 
