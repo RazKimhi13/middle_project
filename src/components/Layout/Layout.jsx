@@ -8,12 +8,18 @@ import { useContext } from "react";
 
 const Layout = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const { loggedUser } = useContext(UserContext);
+  const { loggedUser  } = useContext(UserContext);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+  
+  
+//  <div>{loggedUser.username && (
+//         <button onClick={handleLogout}>Logout</button>
+//       )}</div>
 
+      
   
   return (
     <>
@@ -60,7 +66,8 @@ const Layout = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> 
+  
 
       <Outlet />
  <br />
@@ -88,6 +95,7 @@ const Layout = () => {
          
           <div ><Link to="register" className='footerLink'>register</Link></div>
           <div ><Link to="Login" className='footerLink'>login</Link></div>
+          
         </div>
       </div>
       <br />

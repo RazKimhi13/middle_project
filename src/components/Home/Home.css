@@ -60,7 +60,7 @@ body{
 .header {
   font-size: 2rem;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%); 
   text-align: center;
@@ -150,14 +150,21 @@ body {
   .header h5{display: none;}
 .logbtn {
   width: 15vw;
+  border: 0.1vh solid rgb(0, 0, 0);
 }
 
 .registerbtn {
-  width: 15vw;
+  border: 0.1vh solid rgb(0, 0, 0);
+
+  width: 17vw;
 }
   .webimg1,
   .webimg2 {
     order: 2; 
+}
+.buttons-container {
+  top: auto;
+  left: 35vw;
 }}
 
 .bigDiv{

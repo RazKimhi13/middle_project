@@ -15,19 +15,28 @@ function Home() {
     <div>
   <div className='home-container'>
 
-    <video autoPlay loop muted className='weddingvideo' src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4" ></video>
-    <div class="header"><h2>{loggedUser.username && "WELCOME " + loggedUser.username}</h2>
-      <h5 >Let's make your dream come true!</h5>
-    </div>
+  <div>
+  <video autoPlay loop muted className='weddingvideo' src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4"></video>
+  
+  <div className="header">
+    {loggedUser.username ? (
+      <h2>WELCOME {loggedUser.username}</h2>
+    ) : (
+      <h2>WELCOME</h2>
+    )}
+    <h5>Let's make your dream come true!</h5>
+  </div>
+</div>
 
 
     <div className="buttons-container">
-      <Link to="/login">
+      {loggedUser.username ? null : (   <Link to="/login">
         <button className='logbtn'>Login</button>
-      </Link>
-      <Link to="/register">
+      </Link>) }
+   {loggedUser.username ? null : ( <Link to="/register">
         <button className='registerbtn'>Register</button>
-      </Link>
+      </Link>)}
+     
     </div>
     <br />
     <br />

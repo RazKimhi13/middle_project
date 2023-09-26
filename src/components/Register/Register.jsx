@@ -32,6 +32,10 @@ const Register = () => {
         Already have an account?{" "}
         <Link to="/login">Login here</Link>
       </p>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
