@@ -1,18 +1,30 @@
-body{
-  background-color: white;
+
+body {
+  background-color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
+.welcome-text {
+  font-family: 'Courgette', cursive;
+  font-size: 8vh;
+  color: #fff;
+}
 
+.subheader {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+}
 
 
 .buttons-container {
   position: absolute;
-  top: 14vh;
+  top: 15vh;
   right: 2vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-end;
   gap: 1vw;
+ z-index: 1;
 }
 
 
@@ -28,7 +40,7 @@ body{
 
 .registerbtn {
   opacity: 70%;
-  background-color:rgb(198, 142, 251);
+  background-color: #D988B9;
   width: 6vw;
   height: 4vh;
   border: 0.1vh solid rgb(254, 254, 206);
@@ -58,7 +70,7 @@ body{
 }
 
 .header {
-  font-size: 2rem;
+  font-size: 4vh;
   position: absolute;
   top: 50%;
   left: 50%; 
@@ -67,40 +79,59 @@ body{
   color: rgb(255, 255, 255); 
   text-shadow: 0.4vw 0.2vw rgba(0, 0, 0, 0.481);
 }
-.header h2{
-    font-family: "Courgette", cursive;
-}
-.header h5{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* Two equal columns */
-  gap: 4vw; /* Add gap between columns */
-}
-
-.container1{
+/* Updated styling for container1 and container2 */
+.container1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 3rem 0;
+  text-align: center;
 }
+
 .container2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.webimg1 img {
-  width: 55vh;}
-  .webimg2 img {
-    width:55vh;}
-    
-.container2 h4{
+  padding: 3rem 0;
   text-align: center;
 }
-.container2 p{
+
+.webimg1 img,
+.webimg2 img {
+  width:55vh;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+.container1 h4,
+.container2 h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #333; /* Adjust color as needed */
+  margin-bottom: 1rem;
   text-align: center;
 }
-.webtext1 {
+
+.container1 p,
+.container2 p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #666; /* Adjust color as needed */
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3vw; 
+}
+
+  
+.webtext1,.webtext2 {
   text-align: center;
 }
 
@@ -140,8 +171,9 @@ body {
 @media (max-width: 767px) {
   .header{
     top: 25%;
-
   }
+  .welcome-text {
+    font-size: 5vh;}
   .container1,
   .container2 {
     display: flex;
@@ -189,27 +221,43 @@ body {
   align-items: center;
   box-shadow: 3vw 2vw 15px rgba(0, 0, 0, 0.481);
   border-radius: 0.5vw;
+   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-.alltext{
-  display: flex;
+.alltext {
+  flex: 1;
+    display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
+
 .cardImg{
   height: 40vh;
   width: 25vw;
   padding: 0.2vw;
   border-radius: 0.5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.koteret {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #333;
 }
 
-  .koteret{
-  font-size: 2vw;
-font-weight: bold;
-  }
-  .kituv{
-    padding: 0.2vw;
-text-align: center;  }
+.kituv {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  color: #666;
+  line-height: 1.5;
+      padding: 0.2vw;
+text-align: center;
+}
+
+ 
 @media (max-width: 860px) {
   .bigDiv{
 display: grid;
@@ -225,3 +273,10 @@ display: grid;
     font-size: 5vw;
   }
 }
+.message-overlay{
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+
+

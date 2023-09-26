@@ -27,18 +27,16 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* .logo {
-} */
+
 .logo img {
   height: 60px;
+  opacity: 70%;
 }
 
 .menu-icon {
   display: none;
 }
 
-/* .nav-elements {
-} */
 
 .nav-elements ul {
   display: flex;
@@ -141,7 +139,7 @@ body {
   }
 }
 .footer{
-  background-color: #d0d0cf;
+  background-color: #ff76ff4a;
 }
 .lists{
   margin-top: 4vh;
@@ -149,8 +147,9 @@ body {
   justify-content: space-around;
 
 }
-.lists h3{text-decoration: underline;
-
+.lists h3{
+  text-decoration: underline;
+cursor: auto;
 }
 .lists div{
   cursor: pointer;
