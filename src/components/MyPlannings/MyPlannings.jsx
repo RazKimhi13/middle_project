@@ -6,14 +6,11 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./MyPlannings.css";
 
-
 export default function MyPlannings() {
   const { loggedUser } = useContext(UserContext);
   const [value, setValue] = useState(new Date());
 
-
   console.log(loggedUser);
-
 
   useEffect(() => {
     if (loggedUser.chosenDay) {
@@ -24,7 +21,11 @@ export default function MyPlannings() {
   return (
     <>
       <div className="plan-title">
-        <h1>My Current Plan</h1>
+        {loggedUser.username ? (
+          <h1>{loggedUser.username} Current Plan</h1>
+        ) : (
+          <h1>My Current Plan</h1>
+        )}
       </div>
       <div className="my-plannings-container">
         <div className="left-side-container">
@@ -39,7 +40,7 @@ export default function MyPlannings() {
           </div>
 
           {/* Calendar */}
-          <div className="calendar-container">
+          <div>
             <h2 className="info-title">Date</h2>
             <div className="calendar">
               <Calendar showWeekNumbers value={value} />
@@ -50,7 +51,7 @@ export default function MyPlannings() {
           {/* Venue */}
           {loggedUser.venue ? (
             <div className="venue">
-              <h2 className="info-title">Venue</h2>
+              <h1 className="info-title">Venue</h1>
               <img className="venue-image" src={loggedUser.venue} alt="Venue" />
             </div>
           ) : (
@@ -58,6 +59,14 @@ export default function MyPlannings() {
               <p className="info-title">Venue not entered yet</p>
             </div>
           )}
+
+          {/* Credit */}
+          <div className="creditcard">
+            <h1 className="info-title">creditcard</h1>
+            {loggedUser.cardNumber
+              ? `${loggedUser.cardNumber.slice(0, 4)} **** **** ****`
+              : "payment information not entered yet"}
+          </div>
         </div>
       </div>
     </>

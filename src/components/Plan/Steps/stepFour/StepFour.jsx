@@ -37,9 +37,9 @@ const StepFour = ({setPage, page}) => {
         updatedUser.cvc = data.cvc;
         updatedUser.expiryDate = data.expiryDate;
         setLoggedUser(updatedUser);
-        console.log(loggedUser);
-    alert("Payment saved successfully!");
-    setPage((currPage) => currPage + 1);
+        localStorage.setItem("loggedUser", JSON.stringify(updatedUser));
+      alert("Payment saved successfully!");
+      setPage((currPage) => currPage + 1);
 
   };
 

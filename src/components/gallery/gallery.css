@@ -4,6 +4,7 @@
   font-family: "Courgette", cursive;
   font-size: 2rem;
   color: #451952;
+  animation: fadeInUp 0.5s ease-in-out forwards;
 
 }
 
@@ -17,6 +18,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  animation: fadeInDown 0.5s ease-in-out forwards;
+
 }
 
 .gallery-item {

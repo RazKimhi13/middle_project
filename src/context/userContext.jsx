@@ -43,6 +43,7 @@ const UserProvider = ({ children }) => {
       return alert("Wrong credentials!");
     }
     setLoggedUser({username: username, password: password});
+    // localStorage.setItem("loggedUser", JSON.stringify({ username, password }));
     alert("Logged in!");
     navigate("/");
   };

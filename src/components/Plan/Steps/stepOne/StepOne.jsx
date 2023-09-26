@@ -24,6 +24,7 @@ function StepOne({setPage, page}) {
         const updatedUser = { ...loggedUser };
         updatedUser.budget = budget;
         setLoggedUser(updatedUser);
+        localStorage.setItem("loggedUser", JSON.stringify(updatedUser));
         alert("Budget updated!");
         setPage((currPage) => currPage + 1);
       })}
@@ -33,7 +34,7 @@ function StepOne({setPage, page}) {
         <input
           type="range"
           min="0"
-          max="10000"
+          max="100000"
           placeholder="enter your budget"
           {...register("budget", { required: true })}
           onChange={handleBudgetChange}
