@@ -41,8 +41,8 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
   color: #451952;
-  opacity: 0; /* Start with the element hidden */
-  transform: translateY(-20px); /* Move the element up */
+  opacity: 0;
+  transform: translateY(-20px); 
   animation: fadeInUp 0.5s ease-in-out forwards;
 }
 

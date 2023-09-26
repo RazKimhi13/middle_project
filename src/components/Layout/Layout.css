@@ -22,7 +22,7 @@ body {
 .navbar {
   z-index: 1;
   height: 5rem;
-  background-color: #d988b9b3;
+  /* background-color:#fff2d8; */
   position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -185,3 +185,32 @@ cursor: auto;
   .sideLogo{
 display: none;
 position: fixed;}}
+
+
+.navbar, .footer {
+  /* background: linear-gradient(300deg, #ffffff,  #ffc5fc);
+     */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    300deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 167, 251, 1) 24%,
+    rgba(171, 4, 163, 1) 55%,
+    rgba(255, 178, 251, 1) 79%,
+    rgba(255, 197, 252, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

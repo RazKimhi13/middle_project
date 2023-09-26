@@ -36,30 +36,31 @@ const Layout = () => {
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
               <li>
-                <Link to="/">Home</Link>
-              </li>
-
-              <li>
                 <Link to="/ContactUs">contact us</Link>
               </li>
               <li>
                 <Link to="/gallery">gallery </Link>
               </li>
+    
 
-              {loggedUser.username && (
-                <li>
-                  <Link to="/Plan">Plan</Link>
-                </li>
-              )}
-
-              {loggedUser.username === "raz" && (
+              {/* {loggedUser.username === "raz" && (
                 <li>
                   <Link to="/admin">Admin</Link>
                 </li>
-              )}
+              )} */}
               {loggedUser.username && (
                 <li>
-                  <Link to="/myPlannings">My plannings</Link>
+                  <Link to="/myPlannings">My plans</Link>
+                </li>
+              )}
+              {!loggedUser.username && (
+                <li>
+                  <Link to="/Login">Login</Link>
+                </li>
+              )}
+              {!loggedUser.username && (
+                <li>
+                  <Link to="/register">Register</Link>
                 </li>
               )}
           

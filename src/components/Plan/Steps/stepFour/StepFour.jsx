@@ -2,10 +2,13 @@ import { useForm } from "react-hook-form";
 import { useCreditCardValidator, images } from "react-creditcard-validator";
 import "./StepFour.css";
 import { UserContext } from "../../../../context/userContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import CheckMark from "../CheckMark/CheckMark";
 
-const StepFour = ({setPage, page}) => {
-  const { loggedUser, setLoggedUser } = useContext(UserContext);
+const StepFour = ({ setPage, page }) => {
+  const { loggedUser, setLoggedUser, users, setUsers } =
+    useContext(UserContext);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const {
     register,
@@ -33,14 +36,25 @@ const StepFour = ({setPage, page}) => {
   const onSubmit = (data) => {
     console.log(data);
     const updatedUser = { ...loggedUser };
-        updatedUser.cardNumber = data.cardNumber;
-        updatedUser.cvc = data.cvc;
-        updatedUser.expiryDate = data.expiryDate;
-        setLoggedUser(updatedUser);
-        localStorage.setItem("loggedUser", JSON.stringify(updatedUser));
-      alert("Payment saved successfully!");
-      setPage((currPage) => currPage + 1);
-
+    updatedUser.cardNumber = data.cardNumber;
+    updatedUser.cvc = data.cvc;
+    updatedUser.expiryDate = data.expiryDate;
+    setLoggedUser(updatedUser);
+    const currentUserIndex = loggedUser
+      ? users.findIndex((user) => user.username === loggedUser.username)
+      : -1;
+    if (currentUserIndex !== -1) {
+      const newUsers = [...users];
+      if (!newUsers[currentUserIndex].cardNumber) {
+        newUsers[currentUserIndex].cardNumber = "";
+      }
+      newUsers[currentUserIndex].cardNumber = data.cardNumber;
+      setUsers(newUsers);
+      localStorage.setItem("users", JSON.stringify(newUsers));
+    }
+    setIsSubmitted(true);
+    // alert("Payment saved successfully!");
+    // setPage((currPage) => currPage + 1);
   };
 
   return (
@@ -48,77 +62,86 @@ const StepFour = ({setPage, page}) => {
       <div className="form-title">
         <h1>Payment information</h1>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)} className="custom-payment-form">
-        <main>
-          <div className="custom-input-group">
-            <svg
-              {...getCardImageProps({ images })}
-              className="custom-card-image"
-            />
-            <label htmlFor="cardNumber" className="custom-label">
-              Card Number
-            </label>
-            <input
-              {...register("cardNumber", {
-                required: "Card Number is required",
-                pattern: {
-                  value: /^[0-9]{16}$/,
-                  message: "Invalid Card Number",
-                },
-              })}
-              className="custom-input"
-              id="cardNumber"
-            />
-            <small className="custom-error-message">
-              {errors.cardNumber && errors.cardNumber.message}
-            </small>
-            <small className="custom-error-message">
-              {erroredInputs.cardNumber && erroredInputs.cardNumber}
-            </small>
-          </div>
+      {!isSubmitted ? (
+        <>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="custom-payment-form"
+          >
+            <main>
+              <div className="custom-input-group">
+                <svg
+                  {...getCardImageProps({ images })}
+                  className="custom-card-image"
+                />
+                <label htmlFor="cardNumber" className="custom-label">
+                  Card Number
+                </label>
+                <input
+                  {...register("cardNumber", {
+                    required: "Card Number is required",
+                    pattern: {
+                      value: /^[0-9]{16}$/,
+                      message: "Invalid Card Number",
+                    },
+                  })}
+                  className="custom-input"
+                  id="cardNumber"
+                />
+                <small className="custom-error-message">
+                  {errors.cardNumber && errors.cardNumber.message}
+                </small>
+                <small className="custom-error-message">
+                  {erroredInputs.cardNumber && erroredInputs.cardNumber}
+                </small>
+              </div>
 
-          <div className="custom-multi-input">
-            <div className="custom-input-group">
-              <label htmlFor="expiryDate" className="custom-label">
-                Valid Till
-              </label>
-              <input
-                {...register("expiryDate", {
-                  required: "Expiry Date is required",
-                })}
-                className="custom-input"
-                id="expiryDate"
-              />
-              <small className="custom-error-message">
-                {errors.expiryDate && errors.expiryDate.message}
-              </small>
-              <small className="custom-error-message">
-                {erroredInputs.expiryDate && erroredInputs.expiryDate}
-              </small>
-            </div>
-          </div>
-          <div className="custom-input-group">
-            <label htmlFor="cvc" className="custom-label">
-              CVC
-            </label>
-            <input
-              {...register("cvc", { required: "CVC is required" })}
-              className="custom-input"
-              id="cvc"
-            />
-            <small className="custom-error-message">
-              {errors.cvc && errors.cvc.message}
-            </small>
-            <small className="custom-error-message">
-              {erroredInputs.cvc && erroredInputs.cvc}
-            </small>
-          </div>
+              <div className="custom-multi-input">
+                <div className="custom-input-group">
+                  <label htmlFor="expiryDate" className="custom-label">
+                    Valid Till
+                  </label>
+                  <input
+                    {...register("expiryDate", {
+                      required: "Expiry Date is required",
+                    })}
+                    className="custom-input"
+                    id="expiryDate"
+                  />
+                  <small className="custom-error-message">
+                    {errors.expiryDate && errors.expiryDate.message}
+                  </small>
+                  <small className="custom-error-message">
+                    {erroredInputs.expiryDate && erroredInputs.expiryDate}
+                  </small>
+                </div>
+              </div>
+              <div className="custom-input-group">
+                <label htmlFor="cvc" className="custom-label">
+                  CVC
+                </label>
+                <input
+                  {...register("cvc", { required: "CVC is required" })}
+                  className="custom-input"
+                  id="cvc"
+                />
+                <small className="custom-error-message">
+                  {errors.cvc && errors.cvc.message}
+                </small>
+                <small className="custom-error-message">
+                  {erroredInputs.cvc && erroredInputs.cvc}
+                </small>
+              </div>
 
-          <button type="submit" className="custom-submit-button">
-            Submit
-          </button>
-        </main>
-      </form>
+              <button type="submit" className="custom-submit-button">
+                Submit
+              </button>
+            </main>
+          </form>
+        </>
+      ) : (
+        <CheckMark />
+      )}
     </>
   );
 };
