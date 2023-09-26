@@ -1,41 +1,82 @@
+.left-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courgette", cursive;
+  color: #451952;
+}
+
 .my-plannings-container {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  color: #451952;
+}
+
+.venue-image {
+  width: 30vw;
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Adds a smooth hover effect */
+}
+
+.venue-image:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
+}
+.venue-not-entered {
+  text-align: center;
+}
+
+.plan-title {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  color: #451952;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0; /* Start with the element hidden */
+  transform: translateY(-20px); /* Move the element up */
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .my-plannings-title {
-    font-size: 24px;
-    margin-bottom: 10px;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .my-plannings-info {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .info-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .info-value {
-    font-size: 16px;
-  }
-  
-  .venue-image {
-    max-width: 100%;
-    max-height: 200px;
-  }
-  
-  .venue-not-entered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .my-plannings-container {
     flex-direction: column;
-    font-size: 16px;
+
   }
-  
+
+  .left-side-container {
+    margin-right: 0;
+  }
+
+  .venue {
+    margin-top: 0;
+  }
+
+  .venue-image {
+    width: 60vw;
+  }
+}

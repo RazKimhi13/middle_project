@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 .my-form {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,10 @@
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  text-align: center;
+  font-family: "Courgette", cursive;
+    color: #451952;
+
 }
 
 .form-label {
@@ -27,4 +33,25 @@
 
 .submit-button {
   margin-top: 10px;
+}
+.form-title {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #451952;
+  opacity: 0; /* Start with the element hidden */
+  transform: translateY(-20px); /* Move the element up */
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -39,3 +39,15 @@
   opacity: 1;
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { UserContext } from "../../../../context/userContext";
 import "./StepOne.css";
 
-function StepOne() {
+function StepOne({setPage, page}) {
   const { loggedUser, setLoggedUser } = useContext(UserContext);
   const { register, handleSubmit } = useForm();
   const [budgetValue, setBudgetValue] = useState(0);
@@ -12,7 +12,12 @@ function StepOne() {
     setBudgetValue(event.target.value);
   };
 
+
   return (
+    <>
+    <div className="form-title">
+    <h1 >Let's start planning!</h1>
+    </div>
     <form
       className="my-form"
       onSubmit={handleSubmit(({ budget }) => {
@@ -20,6 +25,7 @@ function StepOne() {
         updatedUser.budget = budget;
         setLoggedUser(updatedUser);
         alert("Budget updated!");
+        setPage((currPage) => currPage + 1);
       })}
     >
       <p className="form-label">Please enter your budget</p>
@@ -36,6 +42,10 @@ function StepOne() {
       <p className="budget-value">{budgetValue + "$"}</p>
       <input type="submit" className="submit-button" />
     </form>
+
+   
+    </>
+    
   );
 }
 
