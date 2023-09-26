@@ -32,6 +32,11 @@ const Login = () => {
         Don't have an account?{" "}
         <Link to="/register">Register here</Link>
       </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      
     </div>
   );
 };
