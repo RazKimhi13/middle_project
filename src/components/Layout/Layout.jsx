@@ -96,6 +96,7 @@ const Layout = () => {
 <div><a href="https://www.facebook.com/"><img className='facebookLOGO' src=".\src\assets\facebookLOGO.png" alt="" /></a></div>
 <div><a href="https://www.linkedin.com/in/eden-milo-192083293/"><img className='linkdinLOGO' src=".\src\assets\linkdinLOGO.png" alt="" /></a></div>
       </div>
+      <br />
     </div>
     </>
   );
