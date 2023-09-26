@@ -1,0 +1,6 @@
+.calendar-container{
+    display: flex;
+    justify-content: center;
+    animation: fadeInDown 0.5s ease-in-out forwards;
+
+}

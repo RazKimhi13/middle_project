@@ -32,7 +32,7 @@ function StepTwo({setPage, page}) {
                     const updatedUser = { ...loggedUser };
                     updatedUser.venue = image;
                     setLoggedUser(updatedUser);
-                    console.log(updatedUser);
+                    localStorage.setItem("loggedUser", JSON.stringify(updatedUser));
                     alert("Venue updated!");
                     setPage((currPage) => currPage + 1);
                   }}

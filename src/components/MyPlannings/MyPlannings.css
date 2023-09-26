@@ -5,6 +5,8 @@
   align-items: center;
   font-family: "Courgette", cursive;
   color: #451952;
+  animation: fadeInDown 0.5s ease-in-out forwards;
+
 }
 
 .my-plannings-container {
@@ -12,6 +14,8 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  animation: fadeInDown 0.5s ease-in-out forwards;
+
 }
 
 .calendar {
@@ -24,7 +28,22 @@
   text-align: center;
   font-family: "Courgette", cursive;
   color: #451952;
+
 }
+
+
+.creditcard{
+  text-align: center;
+  font-family: "Courgette", cursive;
+  color: #451952;
+
+}
+.venue-not-entered{
+  text-align: center;
+  font-family: "Courgette", cursive;
+  color: #451952;
+}
+
 
 .venue-image {
   width: 30vw;
