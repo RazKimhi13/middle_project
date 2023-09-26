@@ -7,6 +7,7 @@ import StepTwo from "./Steps/StepTwo/StepTwo";
 import StepThree from "./Steps/StepThree/StepThree";
 import StepFive from "./Steps/StepFive/StepFive";
 import StepFour from "./Steps/stepFour/StepFour";
+import CheckMark from "./Steps/CheckMark/CheckMark";
 
 export default function Plan() {
   const [page, setPage] = useState(0);
@@ -27,45 +28,6 @@ export default function Plan() {
 
   return (
     <>
-      {/* <div className="flex-container">
-        <h1>lets start planning!</h1>
-
-        <div className="multistep-wrapper">
-          <MultiStep
-            activeStep={0}
-            prevButton={{
-              title: "Back",
-              style: {
-                backgroundColor: "rgb(250, 249, 255)",
-                width: "6vw",
-                height: "4vh",
-                border: "2px solid black",
-                borderRadius: "2vw",
-                marginRight: "50vh",
-
-              },
-            }}
-            nextButton={{
-              title: "Next",
-              style: {
-                backgroundColor: "rgb(198, 142, 251)",
-                width: "6vw",
-                height: "4vh",
-                border: "2px solid black",
-                borderRadius: "2vw",
-                marginLeft: "50vh",
-              },
-            }}
-          >
-            <StepOne title="Budget" />
-            <StepTwo title="Venue" />
-            <StepThree title="Date" />
-            <StepFour title="Payment" />
-          </MultiStep>
-        </div>
-
-      </div> */}
-
       <div className="form">
         <div className="progressbar">
           <div

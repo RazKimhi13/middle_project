@@ -42,8 +42,8 @@ const UserProvider = ({ children }) => {
     if (!passwordMatch) {
       return alert("Wrong credentials!");
     }
-    setLoggedUser({username: username, password: password});
-    // localStorage.setItem("loggedUser", JSON.stringify({ username, password }));
+    setLoggedUser(userExists);
+    localStorage.setItem("loggedInUser", JSON.stringify(userExists));
     alert("Logged in!");
     navigate("/");
   };
