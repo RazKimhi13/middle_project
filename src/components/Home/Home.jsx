@@ -20,14 +20,22 @@ function Home() {
   
   <div className="header">
     {loggedUser.username ? (
-      <h2>WELCOME {loggedUser.username}</h2>
+      <h2 className='welcome-text'>WELCOME {loggedUser.username}</h2>
     ) : (
-      <h2>WELCOME</h2>
+      <h2 className='welcome-text'>WELCOME</h2>
     )}
-    <h5>Let's make your dream come true!</h5>
+    <h5 className='subheader'>Let's make your dream come true!</h5>
   </div>
-</div>
 
+</div>
+<div className="message-overlay">
+  
+  {loggedUser.username ? (
+    <Link to="Plan" className='start-plan-link'>
+     Lets Start making a Plan
+    </Link>
+  ) : null}
+</div>
 
     <div className="buttons-container">
       {loggedUser.username ? null : (   <Link to="/login">
@@ -59,7 +67,7 @@ function Home() {
     </div>
     <hr />
     <div className='container2'>
-      <div className='webtex2'>
+      <div className='webtext2'>
         <h4>Customized Packages</h4>
         <p>
 
