@@ -26,21 +26,18 @@ function Home() {
               <h2>WELCOME</h2>
             )}
             <h5>Let's make your dream come true!</h5>
-          </div>
-        </div>
+            {loggedUser.username && (
+                <h1 className='start-plan-link'>
+        <Link to="Plan" className="start-link" >
+              Start a Plan now!
+              </Link>
+      </h1> 
+            )}
 
-        {/* <div className="buttons-container">
-          {loggedUser.username ? null : (
-            <Link to="/login">
-              <button className="logbtn">Login</button>
-            </Link>
-          )}
-          {loggedUser.username ? null : (
-            <Link to="/register">
-              <button className="registerbtn">Register</button>
-            </Link>
-          )}
-        </div> */}
+      
+       </div>
+        </div>
+        
         <br />
         <br />
         <hr />

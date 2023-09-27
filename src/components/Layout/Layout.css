@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
-body {
+ body {
   margin: 0;
   padding: 0;
   background-color: #FFEEF4;
@@ -22,8 +22,6 @@ body {
 .navbar {
   z-index: 1;
   height: 5rem;
-  /* background-color:#fff2d8; */
-  position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -54,7 +52,6 @@ body {
   font-weight: 500;
   color: #451952;
   text-decoration: none;
-  /* font-family: "Dancing Script", cursive; */
   font-family: "Courgette", cursive;
 
   position: relative;
@@ -195,7 +192,7 @@ position: fixed;}}
     300deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 167, 251, 1) 24%,
-    rgba(171, 4, 163, 1) 55%,
+    rgb(239, 116, 233) 55%,
     rgba(255, 178, 251, 1) 79%,
     rgba(255, 197, 252, 1) 100%
   );
@@ -213,4 +210,4 @@ position: fixed;}}
   100% {
     background-position: 0% 50%;
   }
-}
+}  

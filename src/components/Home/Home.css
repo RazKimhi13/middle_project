@@ -69,7 +69,11 @@ body {
   border: 1vh solid white;
 }
 
+.header h2 {
+font-family: 'Courgette';
+}
 .header {
+
   font-size: 4vh;
   position: absolute;
   top: 50%;
@@ -273,10 +277,62 @@ display: grid;
     font-size: 5vw;
   }
 }
-.message-overlay{
-  position: absolute;
-  top: 70%;
-  left: 40%;
+
+.start-plan-link::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
 }
+
+.start-plan-link:hover::before {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    300deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 167, 251, 1) 24%,
+    rgb(239, 116, 233) 55%,
+    rgba(255, 178, 251, 1) 79%,
+    rgba(255, 197, 252, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.start-plan-link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(0, 0%, 100%);
+  z-index: -1;
+  transition: transform .3s ease;
+  border-radius: 5vw;
+}
+
+.start-plan-link {
+   font-family: cursive;
+  position: relative;
+  font-size: 2vw;
+  border-radius: 5vw;
+
+  border: solid #D988B9;
+  animation: fadeInUp 0.5s ease-in-out forwards;
+
+}
+.start-plan-link .start-link{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: 860px) {
+  .start-plan-link {
+    height: 4vh;
+    font-size: 2vh;}}
+
+
+
+
 
 
