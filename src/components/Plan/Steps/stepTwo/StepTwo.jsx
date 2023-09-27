@@ -1,9 +1,11 @@
 import React, { useContext, useState } from "react";
 import "./stepTwo.css";
 import { UserContext } from "../../../../context/userContext";
+import CheckMark from "../CheckMark/CheckMark";
 
 function StepTwo({setPage, page}) {
-  const { loggedUser, setLoggedUser } = useContext(UserContext);
+  const { loggedUser, setLoggedUser ,users, setUsers  } = useContext(UserContext);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const images = [
     "https://i0.wp.com/suessmoments.com/wp-content/uploads/sites/10014/2023/02/website-shadowbrook-nj-wedding-photos-7153-photography-by-SUESS-MOMENTS.jpg?fit=2560%2C1703&ssl=1",
@@ -23,7 +25,9 @@ function StepTwo({setPage, page}) {
         <div className="form-title">
           <h1>Select your dream venue</h1>
         </div>
-        <div className="image-gallery">
+        {!isSubmitted ? (
+        <>
+         <div className="image-gallery">
           {images.map((image, index) => (
             <div key={index} className="image-gallery-item">
               <div className="image-card">
@@ -32,9 +36,21 @@ function StepTwo({setPage, page}) {
                     const updatedUser = { ...loggedUser };
                     updatedUser.venue = image;
                     setLoggedUser(updatedUser);
-                    localStorage.setItem("loggedUser", JSON.stringify(updatedUser));
-                    alert("Venue updated!");
-                    setPage((currPage) => currPage + 1);
+                    const currentUserIndex = loggedUser
+                    ? users.findIndex((user) => user.username === loggedUser.username)
+                    : -1;
+                  if (currentUserIndex !== -1) {
+                    const newUsers = [...users];
+                    if (!newUsers[currentUserIndex].venue) {
+                      newUsers[currentUserIndex].venue = "";
+                    }
+                    newUsers[currentUserIndex].venue = image;
+                    setUsers(newUsers);
+                    localStorage.setItem("users", JSON.stringify(newUsers));
+                  }
+                  setIsSubmitted(true);
+                    // alert("Venue updated!");
+                    // setPage((currPage) => currPage + 1);
                   }}
                   src={image}
                   alt={`Image ${index}`}
@@ -43,6 +59,11 @@ function StepTwo({setPage, page}) {
             </div>
           ))}
         </div>
+        </>
+      ) : (
+        <CheckMark />
+      )}
+        
       </div>
     </>
   );

@@ -23,15 +23,18 @@ function ContactUs() {
 
   return (
     <div className="contact-us-container">
-    <div className="contact-left">
-      <img src="./src/assets/צילום מסך 2023-09-18 160818.png" alt="" />
-    </div>
+  <div className='contact-left'>
+  <h2 className='contact-header'>Contact Us</h2>
+  <p>Need to get in touch with us?
+    <br /> Either fill out the form with your request 
+    <br />or contact us via email: Edenmilo31@gmail.com </p>
+  </div>
     <div className="contact-right">
-      <h2 className='contact-header'>Contact Us</h2>
+    
       <div className='contact-us-form'>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name:*</label>
           <input className="input-field"
             type="text"
             id="name"
@@ -42,7 +45,7 @@ function ContactUs() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email:*</label>
           <input className="input-field"
             type="email"
             id="email"
@@ -66,15 +69,9 @@ function ContactUs() {
         >Submit</button>
       </form>
     </div>
-   
- 
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+
+
   </div>
  
   </div>);

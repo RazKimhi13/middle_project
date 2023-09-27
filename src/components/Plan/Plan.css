@@ -1,24 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
-/* .flex-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  font-family: "Courgette", cursive;
-  font-size: 2rem;
-  flex-direction: column;
-}
-
-
-
-button {
-  color: #451952;
-} */
-
-
-/* Plan.css */
-
-
 
 .progressbar {
   height: 20px;
@@ -38,8 +19,6 @@ button {
   padding: 20px;
 }
 
-
-
 .nav-buttons {
   margin-top: 3rem;
   display: flex;
@@ -55,13 +34,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
   animation: fadeInUp 0.5s ease-in-out forwards;
-
 }
-
-
-
-
-
 
 .nav-button:hover {
   background-color: #2980b9;
@@ -74,5 +47,7 @@ button {
 .nav-submit-button:hover {
   background-color: #219d53;
 }
+
+
 
 

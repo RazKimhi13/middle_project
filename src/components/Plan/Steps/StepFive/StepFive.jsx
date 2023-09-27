@@ -8,21 +8,21 @@ function StepFive() {
       <div className="form-title">
         <h1>Great, now we are all set!</h1>
       </div>
-      <div class="success-animation">
+      <div className="custom-success-animation">
         <svg
-          class="checkmark"
+          className="custom-checkmark"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 52 52"
         >
           <circle
-            class="checkmark__circle"
+            className="custom-checkmark__circle"
             cx="26"
             cy="26"
             r="25"
             fill="none"
           />
           <path
-            class="checkmark__check"
+            className="custom-checkmark__check"
             fill="none"
             d="M14.1 27.2l7.1 7.2 16.7-16.8"
           />
