@@ -31,7 +31,7 @@
 
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for the form container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .form-group {
@@ -43,24 +43,24 @@
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #333; /* Label text color */
+  color: #333; 
 }
 
 .input-field {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc; /* Border color */
+  border: 1px solid #ccc; 
   border-radius: 5px;
   font-size: 1rem;
 }
 
 textarea.input-field {
-  resize: vertical; /* Allow vertical resizing for the textarea */
+  resize: vertical; 
 }
 
 .submit-button {
-  background-color: #007bff; /* Submit button background color */
-  color: #fff; /* Submit button text color */
+  background-color: #007bff; 
+  color: #fff;
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
@@ -69,10 +69,8 @@ textarea.input-field {
 }
 
 .submit-button:hover {
-  background-color: #0056b3; /* Hover state background color */
+  background-color: #0056b3; 
 }
-
-/* Media query for responsiveness */
 @media (max-width: 768px) {
   .contact-us-container {
     flex-direction: column;
