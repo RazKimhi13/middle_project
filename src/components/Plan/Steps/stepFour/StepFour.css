@@ -1,41 +1,35 @@
-/* Style the form container */
 .custom-payment-form {
-  width: 300px; /* Set your preferred width */
-  margin: 0 auto; /* Center the form horizontally */
+  width: 300px; 
+  margin: 0 auto; 
   padding: 20px;
-  background-color: #f5f5f5; /* Background color for the form */
-  border: 1px solid #ccc; /* Border around the form */
-  border-radius: 5px; /* Rounded corners for the form */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-color: #f5f5f5; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   animation: fadeInDown 0.5s ease-in-out forwards;
 
 }
 
-/* Style the main content container */
 .custom-payment-form main {
   display: flex;
   flex-direction: column;
 }
 
-/* Style the input groups */
 .custom-input-group {
   margin: 15px;
 }
 
-/* Style the card image */
 .custom-card-image {
-  width: 50px; /* Set your preferred width */
-  height: auto; /* Maintain aspect ratio */
+  width: 50px; 
+  height: auto; 
   margin-bottom: 10px;
 }
 
-/* Style labels */
 .custom-label {
   font-weight: bold;
 }
 
-/* Style input fields */
 .custom-input {
   padding: 10px;
   width: 100%;
@@ -44,17 +38,15 @@
   font-size: 14px;
 }
 
-/* Style error messages */
 .custom-error-message {
   color: red;
   font-size: 12px;
   margin-top: 5px;
 }
 
-/* Style the submit button */
 .custom-submit-button {
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #007bff;
+  color: white; 
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -63,7 +55,6 @@
   margin-top: 10px;
 }
 
-/* Style the submit button on hover */
 .custom-submit-button:hover {
-  background-color: #0056b3; /* Darker background color on hover */
+  background-color: #0056b3; 
 }
