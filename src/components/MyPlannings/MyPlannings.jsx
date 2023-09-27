@@ -5,6 +5,7 @@ import { UserContext } from "../../context/userContext";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./MyPlannings.css";
+import { Link } from "react-router-dom";
 
 export default function MyPlannings() {
   const { loggedUser } = useContext(UserContext);
@@ -22,9 +23,11 @@ export default function MyPlannings() {
     <>
       <div className="plan-title">
         {loggedUser.username ? (
-          <h1>{loggedUser.username} Current Plan</h1>
+          <h1>{loggedUser.username} Current <Link to="/Plan">Plan</Link></h1>
         ) : (
-          <h1>My Current Plan</h1>
+          <h1>
+            My Current <Link to="/Plan">Plan</Link>
+          </h1>
         )}
       </div>
       <div className="my-plannings-container">
