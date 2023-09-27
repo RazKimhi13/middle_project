@@ -103,7 +103,7 @@ font-family: 'Courgette';
 
 .webimg1 img,
 .webimg2 img {
-  width:55vh;
+  width:40vh;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -138,6 +138,7 @@ font-family: 'Courgette';
   
 .webtext1,.webtext2 {
   text-align: center;
+  
 }
 
 body {
@@ -277,6 +278,9 @@ display: grid;
   .koteret{
     font-size: 5vw;
   }
+  .kituv{
+    font-size: 3vw;
+  }
 }
 
 .start-plan-link::before {  
@@ -329,8 +333,13 @@ display: grid;
 
 @media (max-width: 860px) {
   .start-plan-link {
+    top: 3vh;
     height: 4vh;
-    font-size: 2vh;}}
+    font-size: 2vh;}
+    .start-plan-link .start-link {
+
+    color: #d988b9d6;
+  }}
 
 
 

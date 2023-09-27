@@ -78,7 +78,7 @@ const Layout = () => {
               </div>
             </div>
             <div className="helpList">
-              <h3>help</h3>
+              <h3>Help</h3>
               <div>
                 <Link to="ContactUs" className="footerLink">
                   contact us
