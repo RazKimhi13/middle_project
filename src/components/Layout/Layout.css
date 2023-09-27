@@ -105,16 +105,31 @@
 
   @media (max-width: 600px) {
     .menu-icon {
+      
       display: block;
       cursor: pointer;
     }
 
     .nav-elements {
+      z-index: 2;
+        
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          300deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 167, 251, 1) 24%,
+          rgb(239, 116, 233) 55%,
+          rgba(255, 178, 251, 1) 79%,
+          rgba(255, 197, 252, 1) 100%
+        );
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      
       margin-top: 1rem;
       position: absolute;
       right: 0;
       top: 60px;
-      background-color: #f78ca2;
+     
       width: 0px;
       height: calc(100vh - 60px);
       transition: all 0.3s ease-in;
