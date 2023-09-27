@@ -1,9 +1,9 @@
 .form-ending{
     text-align: center;
     font-family: "Courgette", cursive;
+    color: #451952;
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #451952;
     animation: fadeInDown 0.5s ease-in-out forwards;
 
 }
@@ -11,7 +11,7 @@
 .custom-success-animation {
     margin: 150px auto;
   }
-  
+
 .custom-checkmark {
     width: 100px;
     height: 100px;

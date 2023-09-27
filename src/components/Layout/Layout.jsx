@@ -8,7 +8,7 @@ import { useContext } from "react";
 
 const Layout = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const { loggedUser  } = useContext(UserContext);
+  const { loggedUser } = useContext(UserContext);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -16,8 +16,6 @@ const Layout = () => {
   
   
 
-      
-  
   return (
     <>
       <nav className="navbar">
@@ -38,7 +36,6 @@ const Layout = () => {
               <li>
                 <Link to="/gallery">gallery </Link>
               </li>
-    
 
               {/* {loggedUser.username === "raz" && (
                 <li>
@@ -60,30 +57,30 @@ const Layout = () => {
                   <Link to="/register">Register</Link>
                 </li>
               )}
-          
             </ul>
           </div>
         </div>
-      </nav> 
-  
+      </nav>
 
       <Outlet />
- <br />
- <br />
- <br />
-    <div className='footer'> 
-    <hr />
+      <br />
+      <br />
+      <br />
+      <div className="footer">
+        <hr />
 
-      <div className='lists'> 
-        <div className='sideLogo'>
-        
-          <div>
-            <img src=".\src\assets\icons\website-icon2.png" alt="" />
+        <div className="lists">
+          <div className="sideLogo">
+            <div>
+              <img src=".\src\assets\icons\website-icon2.png" alt="" />
+            </div>
           </div>
-        </div>
-        <div className='helpList'>
-          <h3>Help</h3>
-          <div><Link to="ContactUs" className='footerLink'>Contact us</Link>
+          <div className="helpList">
+            <h3>help</h3>
+            <div>
+              <Link to="ContactUs" className="footerLink">
+                contact us
+              </Link>
             </div>
           <div>support</div>
           <div>terms of use</div>
@@ -95,15 +92,38 @@ const Layout = () => {
           <div ><Link to="Login" className='footerLink'>login</Link></div>
           
         </div>
+        <br />
+        <div className="socials">
+          <div>
+            <a href="https://www.instagram.com/eden_milo/">
+              <img
+                className="instegramLOGO"
+                src=".\src\assets\instegramLOGO.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/">
+              <img
+                className="facebookLOGO"
+                src=".\src\assets\facebookLOGO.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/eden-milo-192083293/">
+              <img
+                className="linkdinLOGO"
+                src=".\src\assets\linkdinLOGO.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <br />
       </div>
-      <br />
-      <div className='socials'>
-<div><a href="https://www.instagram.com/eden_milo/"><img className='instegramLOGO' src=".\src\assets\instegramLOGO.png" alt="" /></a></div>
-<div><a href="https://www.facebook.com/"><img className='facebookLOGO' src=".\src\assets\facebookLOGO.png" alt="" /></a></div>
-<div><a href="https://www.linkedin.com/in/eden-milo-192083293/"><img className='linkdinLOGO' src=".\src\assets\linkdinLOGO.png" alt="" /></a></div>
-      </div>
-      <br />
-    </div>
     </>
   );
 };
