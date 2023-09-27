@@ -11,7 +11,7 @@
 .progressbar > div {
   height: 100%;
   border-radius: 10px;
-  background-color: #007bff; /* Change this to your desired progress bar color */
+  background-color: #007bff; 
   transition: width 0.3s ease-in-out;
 }
 

@@ -8,7 +8,6 @@ export const UserContext = createContext({
   login: () => {},
 });
 
-// eslint-disable-next-line react/prop-types
 const UserProvider = ({ children }) => {
   const [loggedUser, setLoggedUser] = useState({
     username: "",

@@ -32,7 +32,7 @@ export default function Plan() {
         <div className="progressbar">
           <div
             style={{
-              width: `${(page / 4) * 100}%`, // Calculate the width based on the current page
+              width: `${(page / 4) * 100}%`, 
             }}
           ></div>
         </div>
