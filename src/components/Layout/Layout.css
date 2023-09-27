@@ -210,8 +210,7 @@
 
 
 .navbar, .footer {
-  /* background: linear-gradient(300deg, #ffffff,  #ffc5fc);
-     */
+
   background: rgb(255, 255, 255);
   background: linear-gradient(
     300deg,
