@@ -1,20 +1,20 @@
-
-
 .contact-us-container {
-
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   max-width: 120vw;
-  margin: 0 auto;
+  margin-bottom: 100px;
   font-family: "Courgette", cursive;
   color: #451952;
+  text-align: center;
 }
 
 .contact-us-form {
   padding: 2vw;
   border-radius: 0.8vw;
   box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
-  animation: fadeInUp 0.5s ease-in-out forwards;  
+  animation: fadeInUp 0.5s ease-in-out forwards;
 }
 
 .contact-left img {
@@ -22,15 +22,13 @@
   height: auto;
   border-radius: 0.8vw;
   box-shadow: 0 0 1vw rgba(0, 0, 0, 0.2);
-  animation: fadeInDown 0.5s ease-in-out forwards;  
-
-
+  animation: fadeInDown 0.5s ease-in-out forwards;
 }
 
 .contact-right {
   width: 30vw;
   height: 60vh;
- 
+
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for the form container */
@@ -79,12 +77,13 @@ textarea.input-field {
   .contact-us-container {
     flex-direction: column;
     align-items: center;
+    width: 90%;
   }
 
   .contact-left,
   .contact-right {
     flex: 1;
-    width: 100%;
+    width: 90%;
   }
 
   .contact-right {

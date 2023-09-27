@@ -136,8 +136,8 @@
     }
   }
   .footer{
-
     background-color: #ff76ff4a;
+    color: #451952;
   }
   .lists{
     margin-top: 4vh;
@@ -159,11 +159,20 @@
   .footerLink{
     color: black;
       text-decoration: none;
+      
   }
+
+
+.helpList{
+  margin-bottom: 10px;
+}
+
   .socials{
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    
+    
   }
   .socials div{
     margin: 2vw;
