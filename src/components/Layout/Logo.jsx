@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Logo = () => (
   <>
-    <img src="./src/assets/icons/website-icon.png" alt="navbar-icon" />
+    <img src="./assets/icons/website-icon.png" alt="navbar-icon" />
   </>
 );
 

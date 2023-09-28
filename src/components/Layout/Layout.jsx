@@ -74,7 +74,7 @@ const Layout = () => {
           <div className="lists">
             <div className="sideLogo">
               <div>
-                <img src=".\src\assets\icons\website-icon2.png" alt="" />
+                <img src=".\assets\icons\website-icon2.png" alt="" />
               </div>
             </div>
             <div className="helpList">
@@ -100,7 +100,7 @@ const Layout = () => {
                 <a href="https://www.instagram.com/eden_milo/">
                   <img
                     className="instegramLOGO"
-                    src=".\src\assets\instegramLOGO.png"
+                    src=".\assets\instegramLOGO.png"
                     alt=""
                   />
                 </a>
@@ -109,7 +109,7 @@ const Layout = () => {
                 <a href="https://www.facebook.com/">
                   <img
                     className="facebookLOGO"
-                    src=".\src\assets\facebookLOGO.png"
+                    src=".\assets\facebookLOGO.png"
                     alt=""
                   />
                 </a>
@@ -118,7 +118,7 @@ const Layout = () => {
                 <a href="https://www.linkedin.com/in/eden-milo-192083293/">
                   <img
                     className="linkdinLOGO"
-                    src=".\src\assets\linkdinLOGO.png"
+                    src=".\assets\linkdinLOGO.png"
                     alt=""
                   />
                 </a>

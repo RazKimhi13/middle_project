@@ -16,7 +16,7 @@ function Home() {
             loop
             muted
             className="weddingvideo"
-            src=".\src\assets\Untitled video - Made with Clipchamp (1).mp4"
+            src=".\assets\Untitled video - Made with Clipchamp (1).mp4"
           ></video>
 
           <div className="header">
@@ -43,7 +43,7 @@ function Home() {
         <hr />
         <div className="container1">
           <div className="webimg1">
-            <img src=".\src\assets\Weddingimg1.png" alt="" />
+            <img src=".\assets\Weddingimg1.png" alt="" />
           </div>
           <div className="webtext1">
             <h4>Wedding Planning Services</h4>
@@ -87,7 +87,7 @@ function Home() {
             </p>
           </div>
           <div className="webimg2">
-            <img src=".\src\assets\Weddingimg2.png" alt="" />
+            <img src=".\assets\Weddingimg2.png" alt="" />
           </div>
         </div>
         <hr />
@@ -103,7 +103,7 @@ function Home() {
           <div className="Card">
             <img
               className="cardImg"
-              src=".\src\assets\Weddingimg3.png"
+              src=".\assets\Weddingimg3.png"
               alt=""
             />
 
@@ -120,7 +120,7 @@ function Home() {
             <div className="alltext">
               <img
                 className="cardImg"
-                src=".\src\assets\Weddingimg4.png"
+                src=".\assets\Weddingimg4.png"
                 alt=""
               />
 
@@ -135,7 +135,7 @@ function Home() {
           <div className="Card">
             <img
               className="cardImg"
-              src=".\src\assets\Weddingimg5.png"
+              src=".\assets\Weddingimg5.png"
               alt=""
             />
 
@@ -152,7 +152,7 @@ function Home() {
             <div className="alltext">
               <img
                 className="cardImg"
-                src=".\src\assets\Weddingimg6.png"
+                src=".\assets\Weddingimg6.png"
                 alt=""
               />
 
