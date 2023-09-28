@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./Plan.css";
 import MultiStep from "react-multistep";
 import StepOne from "./Steps/stepOne/StepOne";
-import StepTwo from "./Steps/StepTwo/StepTwo";
+import StepTwo from "./Steps/stepTwo/StepTwo";
 import StepThree from "./Steps/StepThree/StepThree";
 import StepFive from "./Steps/StepFive/StepFive";
 import StepFour from "./Steps/stepFour/StepFour";
