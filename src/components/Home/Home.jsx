@@ -43,7 +43,7 @@ function Home() {
         <hr />
         <div className="container1">
           <div className="webimg1">
-            <img src=".\src\assets\צילום מסך 2023-09-19 160800.png" alt="" />
+            <img src=".\src\assets\Weddingimg1.png" alt="" />
           </div>
           <div className="webtext1">
             <h4>Wedding Planning Services</h4>
@@ -87,7 +87,7 @@ function Home() {
             </p>
           </div>
           <div className="webimg2">
-            <img src=".\src\assets\צילום מסך 2023-09-19 160913.png" alt="" />
+            <img src=".\src\assets\Weddingimg2.png" alt="" />
           </div>
         </div>
         <hr />
@@ -103,7 +103,7 @@ function Home() {
           <div className="Card">
             <img
               className="cardImg"
-              src=".\src\assets\צילום מסך 2023-09-20 134617.png"
+              src=".\src\assets\Weddingimg3.png"
               alt=""
             />
 
@@ -120,7 +120,7 @@ function Home() {
             <div className="alltext">
               <img
                 className="cardImg"
-                src=".\src\assets\צילום מסך 2023-09-20 134657.png"
+                src=".\src\assets\Weddingimg4.png"
                 alt=""
               />
 
@@ -135,7 +135,7 @@ function Home() {
           <div className="Card">
             <img
               className="cardImg"
-              src=".\src\assets\צילום מסך 2023-09-21 114457.png"
+              src=".\src\assets\Weddingimg5.png"
               alt=""
             />
 
@@ -152,7 +152,7 @@ function Home() {
             <div className="alltext">
               <img
                 className="cardImg"
-                src=".\src\assets\צילום מסך 2023-09-20 134725.png"
+                src=".\src\assets\Weddingimg6.png"
                 alt=""
               />
 
