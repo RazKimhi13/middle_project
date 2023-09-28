@@ -180,8 +180,10 @@
 
 .helpList{
   margin-bottom: 10px;
+  color: black;
 }
-
+.accountList{
+  color: #000;}
   .socials{
     display: flex;
     justify-content: center;
